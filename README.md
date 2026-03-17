@@ -21,7 +21,7 @@ pip install biopython ete3 scipy
 A unified FASTA file containing all raw protein sequences across all species.
 Critical Requirement: The IDs must perfectly match the all.cds IDs and the IDs in the OrthoFinder outputs. No extra descriptions.
 
-代码段
+
 >bjx_rna-bjx_egapx_001242-R1
 MPFKIRLKKSRQYNVVSKNLFVISVELLDRS...
 >another_species_gene1
@@ -29,7 +29,7 @@ MTEYKLVVVGAGGVGKSALTIQLIQNHFVDE...
 2. all.cds (Raw Coding Sequences)
 A unified FASTA file containing all raw nucleotide sequences. Must be strictly a multiple of 3 (in-frame) without internal stop codons.
 
-代码段
+
 >bjx_rna-bjx_egapx_001242-R1
 ATGCCGTTCAAAATTCGCTTGAAGAAAAGTC...
 >another_species_gene1
@@ -62,7 +62,7 @@ python setup_paml_analysis.py \
   -o labeled_tree.nwk
 (Note: The final step, parallel PAML execution and LRT P-value calculation script, can be executed once the above .phy files and .ctl templates are generated.)
 
-PAML 正选择分析自动化准备流程 (Chinese)
+PAML 正选择分析自动化准备流程 
 本项目包含一套自动化的 Python 脚本，旨在简化基于 PAML 的正选择分析（分支-位点模型）的数据准备工作。该流程直接对接 OrthoFinder 结果，从头进行高精度的序列比对，并生成完美的密码子比对文件。
 
 📦 依赖环境
@@ -85,7 +85,7 @@ pip install biopython ete3 scipy
 包含所有物种原始蛋白序列的 FASTA 文件。
 核心要求： 这里的序列 ID 必须与 all.cds 中的 ID 以及 OrthoFinder 分组里的 ID 100% 严格一致，且不包含多余的注释信息。
 
-代码段
+
 >bjx_rna-bjx_egapx_001242-R1
 MPFKIRLKKSRQYNVVSKNLFVISVELLDRS...
 >another_species_gene1
@@ -93,7 +93,7 @@ MTEYKLVVVGAGGVGKSALTIQLIQNHFVDE...
 2. all.cds (原始核酸序列全集)
 包含所有物种原始核酸（CDS）序列的 FASTA 文件。序列长度必须是 3 的倍数（无移码），且内部不包含提前终止密码子。
 
-代码段
+
 >bjx_rna-bjx_egapx_001242-R1
 ATGCCGTTCAAAATTCGCTTGAAGAAAAGTC...
 >another_species_gene1
@@ -101,7 +101,7 @@ ATGACGGAATATAAGCTGGTGGTGGTGGGCG...
 3. SpeciesTree_rooted.txt (物种树文件)
 由 OrthoFinder 生成的标准 Newick 格式系统发育树。
 
-代码段
+
 (((SpeciesA:0.1, SpeciesB:0.2):0.05, SpeciesC:0.3):0.1, SpeciesD:0.4);
 4. Single_Copy_Orthologue_Sequences/ (单拷贝基因目录)
 OrthoFinder 输出目录下的文件夹，里面包含各个单拷贝基因家族的未比对原始序列集合 (.fa 格式)。
