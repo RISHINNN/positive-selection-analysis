@@ -1,6 +1,8 @@
 PAML Positive Selection Analysis Automation Pipeline
 This repository contains a set of automated Python scripts designed to streamline the data preparation and execution of positive selection analysis (Branch-Site Model) using PAML. It directly utilizes OrthoFinder outputs, performs high-precision realignment, and generates perfect codon alignments.
-
+！！！！2026.3.19 Update:  
+Newly uploaded file run_codon_alignment_trim.py. When the protein multiple sequence alignment files of species contain too many gaps, many .phy files of single-copy orthologous gene families become empty. This script can be used as an alternative in step 2.
+！！！！
 📦 Dependencies
 1. External Software
 Ensure the following bioinformatics tools are installed and accessible in your system's PATH (or explicitly configured in the scripts):
