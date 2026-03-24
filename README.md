@@ -30,6 +30,7 @@ Critical Requirement: The IDs must perfectly match the all.cds IDs and the IDs i
 
 >bjx_rna-bjx_egapx_001242-R1
 MPFKIRLKKSRQYNVVSKNLFVISVELLDRS...
+
 >another_species_gene1
 MTEYKLVVVGAGGVGKSALTIQLIQNHFVDE...
 2. all.cds (Raw Coding Sequences)
@@ -38,6 +39,7 @@ A unified FASTA file containing all raw nucleotide sequences. Must be strictly a
 
 >bjx_rna-bjx_egapx_001242-R1
 ATGCCGTTCAAAATTCGCTTGAAGAAAAGTC...
+
 >another_species_gene1
 ATGACGGAATATAAGCTGGTGGTGGTGGGCG...
 3. SpeciesTree_rooted.txt (Species Tree)
