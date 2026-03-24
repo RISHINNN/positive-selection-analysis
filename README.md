@@ -22,6 +22,7 @@ Requires Python 3.6+. Install the required libraries via pip:
 
 Bash
 pip install biopython ete3 scipy
+
 📄 Input Files & Formatting
 1. all.pep (Raw Protein Sequences)
 A unified FASTA file containing all raw protein sequences across all species.
@@ -94,6 +95,7 @@ PAML: 核心软件，主要调用其中的 codeml 程序。
 
 Bash
 pip install biopython ete3 scipy
+
 📄 输入文件格式及示例
 1. all.pep (原始蛋白序列全集)
 包含所有物种原始蛋白序列的 FASTA 文件。
