@@ -58,7 +58,7 @@ The output directory from OrthoFinder containing unaligned single-copy orthogrou
 🚀 Usage Guide
 Step 1: Re-alignment and Codon Alignment
 This script extracts raw sequences, performs MAFFT alignment, and calls PAL2NAL to generate .phy files using multiprocessing.
-Note: Open run_realign_and_pal2nal_mp.py and set the PAL2NAL_SCRIPT path before running.
+Note: Open run_paml_parallel.py and set the PAL2NAL_SCRIPT path before running.
 
 Bash
 python run_realign_and_pal2nal_mp.py \
@@ -76,6 +76,10 @@ python setup_paml_analysis.py \
   -c SpeciesA SpeciesB \
   -o labeled_tree.nwk
 (Note: The final step, parallel PAML execution and LRT P-value calculation script, can be executed once the above .phy files and .ctl templates are generated.)
+
+step3:
+
+look into run_step3.sh 
 
 PAML 正选择分析自动化准备流程 
 本项目包含一套自动化的 Python 脚本，旨在简化基于 PAML 的正选择分析（分支-位点模型）的数据准备工作。该流程直接对接 OrthoFinder 结果，从头进行高精度的序列比对，并生成完美的密码子比对文件。
